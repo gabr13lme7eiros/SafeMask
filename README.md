@@ -12,7 +12,7 @@ Ferramenta de anonimização de dados através de mascaramento em bases de dados
 ### Instalação
 
 - Baixar o arquivo .zip do repositório;
-- git clone
+- git clone https://github.com/gabr13lme7eiros/SafeMask.git
 
 ### Parâmetros
 
@@ -70,6 +70,8 @@ python safemask.py -csv 'teste.csv' -csv-coluna 'cpf' -q 6 -m '*'
 Resultado final do arquivo:
 
 ![image](https://github.com/user-attachments/assets/b480a69f-a1cc-49ec-95b3-5e93afe0b6e1)
+
+Contato: https://www.linkedin.com/in/gabriel-medeiros-a90b42260/
 
 
 
