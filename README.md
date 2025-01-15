@@ -19,16 +19,16 @@ Ferramenta de anonimização de dados através de mascaramento em bases de dados
 Obrigatórios:
 
 - -c, recebe a coluna que será aplicada o mascaramento, o formato correto é database.tabela.coluna (obrigatório somente em tabelas mysql);
-- -q, indica quantos caractéres serão substituidos;
-- -m, indica qual caracterére será utilizado na substituição;
+- -q, indica quantos caractéres serão substituídos;
+- -m, indica qual caracterére será utilizado na substituição.
 
 Opcionais: 
 
 - -s, ativa o modo de simulação, onde nenhuma substituição é feita (somente com tabelas mysql);
 - -b, ativa o backup incremental, onde as atlerações feitas são salvas em um arquivo .csv (somente com tabelas mysql);
-- -i, aplica o mascaramento da esquerda para a direita
-- -csv, indica que o mascaramento será feito em um arquivo .csv
-- -csv-coluna, indica o nome da coluna que será mascarada no csv (obrigatório com arquivos .csv)
+- -i, aplica o mascaramento da esquerda para a direita;
+- -csv, indica que o mascaramento será feito em um arquivo .csv;
+- -csv-coluna, indica o nome da coluna que será mascarada no csv (obrigatório com arquivos .csv).
 
 ### Exemplos de uso
 
@@ -37,13 +37,13 @@ Base de dados  simulada utilizada nos testes:
 ![image](https://github.com/user-attachments/assets/418aa8d3-1392-4f46-83e1-924ca3d35b36)
 
 
-- Utilizando em modo simulação;
+- Utilizando em modo simulação
 
 python safemask.py -c teste_anonimizacao.pessoa.cpf -q 5 -m '@' -s
 
 ![image](https://github.com/user-attachments/assets/1d028907-b1e5-4b3c-9f65-5ec48c45f671)
 
-- Utilizando na base de testes mysql;
+- Utilizando na base de testes mysql
 
 python safemask.py -c teste_anonimizacao.pessoa.cpf -q 5 -m '@' -b 'backup.csv'
 
@@ -57,7 +57,7 @@ Base alterada:
 
 ![image](https://github.com/user-attachments/assets/8231ebf8-b017-47ed-8839-b2bc1afcbb69)
 
-- Utilizando com arquivo .csv;
+- Utilizando com arquivo .csv
 
 Arquivo utilizado nos testes:
 
