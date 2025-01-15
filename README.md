@@ -5,9 +5,9 @@ Ferramenta de anonimização de dados através de mascaramento em bases de dados
 
 - Python 3 instalado e configurado;
 - Biblioteca mysql-connector-python instalada;
-- Adicionar suas credenciais no seguinte trecho de código:
+- Adicionar suas credenciais no seguinte trecho de código (Somente MySQL):
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b01af394-dbce-457a-9287-9a177e4d12ea/36905abd-8869-4a03-b38c-c0afcdd68965/image.png)
+![image](https://github.com/user-attachments/assets/43dcdfbd-9ac4-434a-aa10-e9ee7f35549e)
 
 ### Instalação
 
@@ -34,38 +34,43 @@ Opcionais:
 
 Base de dados  simulada utilizada nos testes:
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b01af394-dbce-457a-9287-9a177e4d12ea/ba579167-4bda-4d3c-a237-6b045862f7b4/image.png)
+![image](https://github.com/user-attachments/assets/418aa8d3-1392-4f46-83e1-924ca3d35b36)
+
 
 - Utilizando em modo simulação;
 
-python masksafe.py -c teste_anonimizacao.pessoa.cpf -q 5 -m '@' -s
+python safemask.py -c teste_anonimizacao.pessoa.cpf -q 5 -m '@' -s
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b01af394-dbce-457a-9287-9a177e4d12ea/9c91d363-281e-4070-ae64-ec98f557c7da/image.png)
+![image](https://github.com/user-attachments/assets/1d028907-b1e5-4b3c-9f65-5ec48c45f671)
 
 - Utilizando na base de testes mysql;
 
-python [masksafe.py](http://masksafe.py/) -c teste_anonimizacao.pessoa.cpf -q 5 -m '@' -b 'backup.csv'
+python safemask.py -c teste_anonimizacao.pessoa.cpf -q 5 -m '@' -b 'backup.csv'
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b01af394-dbce-457a-9287-9a177e4d12ea/0b33f78e-8345-40e9-8d69-6b35de969da6/image.png)
+![image](https://github.com/user-attachments/assets/04497640-6699-4ec3-b957-a20be11e647b)
 
 Arquivo de backup gerado:
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b01af394-dbce-457a-9287-9a177e4d12ea/adada76a-9875-4a44-abd0-aa73d8213335/image.png)
+![image](https://github.com/user-attachments/assets/ee6617fb-7578-4ee0-8e4e-35913297becf)
 
 Base alterada:
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b01af394-dbce-457a-9287-9a177e4d12ea/bc126aca-21b0-4652-a8fb-40b007ef725c/image.png)
+![image](https://github.com/user-attachments/assets/8231ebf8-b017-47ed-8839-b2bc1afcbb69)
 
 - Utilizando com arquivo .csv;
 
 Arquivo utilizado nos testes:
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b01af394-dbce-457a-9287-9a177e4d12ea/7f6e7d27-5df9-4c84-b09a-84f1305ff4fb/image.png)
+![image](https://github.com/user-attachments/assets/fae155f2-f28e-494d-8f58-a6e74ec9e2cc)
 
-python [safemask.py](http://safemask2.py/) -csv 'teste.csv' -csv-coluna 'cpf' -q 6 -m '*'
+python safemask.py -csv 'teste.csv' -csv-coluna 'cpf' -q 6 -m '*'
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b01af394-dbce-457a-9287-9a177e4d12ea/8c93913d-e0b7-4e32-bac2-5147d4134223/image.png)
+![image](https://github.com/user-attachments/assets/80acd615-2d2a-49f5-abf5-fee962cdfafa)
 
 Resultado final do arquivo:
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b01af394-dbce-457a-9287-9a177e4d12ea/b36b4a6a-37f9-4e04-8b49-20af7455dc89/image.png)
+![image](https://github.com/user-attachments/assets/b480a69f-a1cc-49ec-95b3-5e93afe0b6e1)
+
+
+
+
